@@ -47,6 +47,21 @@ letter-spacing: -0.76px;
   opacity: 99%;
   cursor: pointer;
 }
+.line-clamp{
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 1);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  
+ 
+
+}
+.line-clamp.line-clamp-2{
+  --line-clamp: 3;
+}
+.word-break{
+  word-break: break-all;
+}
 /* header */
 .header.fixed {
   position: sticky;
@@ -299,6 +314,7 @@ align-items: center;
   background: url(<path-to-image>) lightgray 50% / cover no-repeat;
 }
 .popular .course-item{
+  flex: 1;
   border-radius: 12px;
 border: 1px solid #E2DFDA;
 background: #FFF;
